@@ -1,0 +1,16 @@
+h1 {
+    color: grey;
+}
+
+body  {
+    background:url(../img/fondoapp.jpg) no-repeat fixed center center #333;
+    background-size: cover; 
+}
+
+p {
+    color: orange;
+}
+
+.l-box {
+    padding: 1em;
+}
