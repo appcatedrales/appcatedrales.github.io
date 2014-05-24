@@ -11,14 +11,18 @@
         <!-- TODO: Move to the end-->
         <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+        
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="css/styles.css" />
 	</head>
 
 	<body>
+        <script>
+                $( "#datepicker" ).datepicker();
+        </script>
 		
 
-		<div data-role="page" class="ui-responsive-panel"><!-- responsive panel added-->
+		<div data-role="page" id="index" class="ui-responsive-panel"><!-- responsive panel added-->
             
             
             
@@ -61,7 +65,7 @@
                     
                     <ul data-role="listview">
                    
-                    <li data-style="b"><a href="#marea"><b>Consulta la marea</b></a></li>
+                        <li><a href="#marea"><b>Consulta la marea</b></a></li>
                         <li><a href="#">Mapa</a></li>
                         <li><a href="#">Cómo llegar</a></li>
                         <li><a href="#">Galería</a></li>
@@ -74,15 +78,42 @@
             </div><!-- /panel -->
 		</div><!-- /page -->
         
-        <div data-role="page" id="marea">
+        <div data-role="page" id="marea" data-url="marea" clss="ui-page ui-page-theme-a">
+            
+            <div data-role="header">
+                
+                <a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+               
+	        </div><!-- /header -->
+            
             <div role="content" class="ui-content" align="center">
             
                 <div id="datepicker"></div>
- 
+                
+                <div>
+               
 
             </div><!-- /content -->
                 
+                <div data-role="panel" id="menu">
+                
+                    
+                    <ul data-role="listview">
+                   
+                        <li><a href="#marea"><b>Consulta la marea</b></a></li>
+                        <li><a href="#">Mapa</a></li>
+                        <li><a href="#">Cómo llegar</a></li>
+                        <li><a href="#">Galería</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">¿Dónde comer?</a></li>
+                        <li><a href="#">¿Dónde dormir?</a></li>
+
+                </ul>
+                
+            </div><!-- /panel -->
+                
 		</div><!-- /page -->
+            
 
 </body>
 </html>
